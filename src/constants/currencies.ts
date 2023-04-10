@@ -1,0 +1,5 @@
+export const PESO = ['ARS', 'USD', 'CLP', 'BOB', 'COP', 'PYG', 'PEN', 'UYU', 'MXN', 'CAD']
+export const EURO = ['EUR']
+export const REAL = ['BRL']
+export const COLON = ['CRC']
+export const QUETZAL = ['GTQ']

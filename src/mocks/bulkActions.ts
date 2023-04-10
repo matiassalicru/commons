@@ -1,0 +1,417 @@
+export const bulkActions = {
+  archive: {
+    id: 'archive',
+  },
+  unarchive: {
+    id: 'unarchive',
+  },
+  delete: {
+    id: 'delete',
+  },
+  copyLinks: {
+    id: 'copy-links',
+  },
+  actions: {
+    id: 'actions',
+    actions: [
+      {
+        id: 'pm',
+        icon: 'user',
+        type: 'avatars',
+        translations: {
+          andMoreUsers: 'user_assignment:and-more-users',
+          assign: 'globals:assign',
+          tooltipAvailableCapacity: 'tooltips:available_capacity',
+          headerTitle: 'user_assignment:header-title',
+          searchInputPlaceholder: 'user_assignment:search',
+          confirm: 'globals:confirm',
+          withoutResults: 'globals:without_results',
+          me_option: 'user_assignment:me_option',
+          type: 'upsells:select_user_title',
+          titleModalPM: 'user_assignment:modal-pm-title',
+          modalPmBody: 'user_assignment:modal-pm-body',
+          modalPmBodyBold: 'user_assignment:modal-pm-body-bold',
+          accept: 'Aceptar',
+          cancel: 'Cancelar',
+        },
+      },
+      {
+        icon: 'user',
+        id: 'collaborator',
+        type: 'avatars',
+        translations: {
+          andMoreUsers: 'user_assignment:and-more-users',
+          assign: 'globals:assign',
+          tooltipAvailableCapacity: 'tooltips:available_capacity',
+          headerTitle: 'user_assignment:header-title',
+          searchInputPlaceholder: 'user_assignment:search',
+          confirm: 'globals:confirm',
+          withoutResults: 'globals:without_results',
+          me_option: 'user_assignment:me_option',
+          type: 'upsells:select_user_title',
+        },
+      },
+      {
+        type: 'date',
+        id: 'deadline',
+        icon: 'calendar-alt',
+      },
+      {
+        id: 'status',
+        type: 'text',
+        data: ['nueva', 'en_proceso', 'estancada', 'finalizada', 'en_diseno', 'en_revision'],
+        customIcon: true,
+      },
+      {
+        data: [
+          {
+            id: '3',
+            name: 'urgent',
+          },
+          {
+            id: '2',
+            name: 'high',
+          },
+          {
+            id: '1',
+            name: 'normal',
+          },
+          {
+            id: '0',
+            name: 'low',
+          },
+        ],
+        type: 'text',
+        id: 'priority',
+        icon: 'exclamation-triangle',
+      },
+    ],
+  },
+}
+
+export const getMockItems = (query: string): Promise<unknown> => {
+  return new Promise(resolve => {
+    if (query === 'pm') {
+      resolve([
+        {
+          id: 8549,
+          firstName: 'Angelica Baca',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8551,
+          firstName: 'Carlos Molero',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8546,
+          firstName: 'Daniel Guzman',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 12022,
+          firstName: 'Daniel apellido',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 14045,
+          firstName: 'DioTest 38',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8555,
+          firstName: 'Dionnel Martinez',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8554,
+          firstName: 'Gabriel Marin',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8550,
+          firstName: 'Geraldine update Castillo',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 14960,
+          firstName: 'Harry AA Potter',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 14746,
+          firstName: 'Ivan Bercovich',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 20432,
+          firstName: 'JOTA CAPACIDAD TOVAR',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8552,
+          firstName: 'Jose Tovar',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8557,
+          firstName: 'Jose Gettas',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11046,
+          firstName: 'Leandro Videla',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8556,
+          firstName: 'Leonardo l',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8548,
+          firstName: 'Maribal Zambrano',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8547,
+          firstName: 'Matias Echazarreta',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8553,
+          firstName: 'Mike m',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 16147,
+          firstName: 'ORADYS COLLABORADOR',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 20431,
+          firstName: 'ORADYS CAPACIDAD ORTEGA',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8545,
+          firstName: 'Oradys Ortega Rosal',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 8661,
+          firstName: 'Ricardo Guzman',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11949,
+          firstName: 'ahora simeparece 2',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 13816,
+          firstName: 'carlos m',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11950,
+          firstName: 'ddd dd',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 14281,
+          firstName: 'epa prod',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 18412,
+          firstName: 'gab mar',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11944,
+          firstName: 'jota jota',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11951,
+          firstName: 'jota2 jota2',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11947,
+          firstName: 'meparece me',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 11948,
+          firstName: 'no meparece',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 13396,
+          firstName: 'prueba prueba',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 9369,
+          firstName: 'test pass',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 9474,
+          firstName: 'test cor',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15391,
+          firstName: 'user test 172 dev cor 172',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15469,
+          firstName: 'user test 250 dev cor 250',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15288,
+          firstName: 'user test 69 dev cor 69',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15226,
+          firstName: 'user test 7 dev cor 7',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15292,
+          firstName: 'user test 73 dev cor 73',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15227,
+          firstName: 'user test 8 dev cor 8',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15304,
+          firstName: 'user test 85 dev cor 85',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15305,
+          firstName: 'user test 86 dev cor 86',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15228,
+          firstName: 'user test 9 dev cor 9',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15309,
+          firstName: 'user test 90 dev cor 90',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15310,
+          firstName: 'user test 91 dev cor 91',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15311,
+          firstName: 'user test 92 dev cor 92',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15312,
+          firstName: 'user test 93 dev cor 93',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15313,
+          firstName: 'user test 94 dev cor 94',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15314,
+          firstName: 'user test 95 dev cor 95',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15315,
+          firstName: 'user test 96 dev cor 96',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15316,
+          firstName: 'user test 97 dev cor 97',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15317,
+          firstName: 'user test 98 dev cor 98',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+        {
+          id: 15318,
+          firstName: 'user test 99 dev cor 99',
+          lastName: 'Pepito',
+          email: 'selim@projectcor.com',
+        },
+      ])
+    }
+  })
+}

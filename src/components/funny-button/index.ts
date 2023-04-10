@@ -1,0 +1,1 @@
+export { FunnyButton } from './FunnyButton'

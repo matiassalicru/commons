@@ -1,0 +1,1 @@
+export { BarProgressCustom } from './BarProgressCustom'

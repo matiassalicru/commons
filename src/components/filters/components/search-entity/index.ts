@@ -1,0 +1,1 @@
+export { SearchEntity } from './SearchEntity'

@@ -1,0 +1,1 @@
+export { ModalCollaboratorMessage } from './ModalCollaboratorMessage'

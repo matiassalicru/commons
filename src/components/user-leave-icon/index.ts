@@ -1,0 +1,1 @@
+export { UserLeaveIcon } from './UserLeaveIcon'

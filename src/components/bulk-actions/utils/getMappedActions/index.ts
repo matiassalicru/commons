@@ -1,0 +1,1 @@
+export { getMappedActions } from './getMappedActions'

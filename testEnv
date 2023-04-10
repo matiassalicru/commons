@@ -1,0 +1,3 @@
+//Config necesario para permitir el import React from "react"; en .tsx files
+//Podria no necesitar mas necesitaria mas para React 17, nota: verificar con el jest.
+DISABLE_NEW_JSX_TRANSFORM=true

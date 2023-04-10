@@ -1,0 +1,25 @@
+export const AMPLITUDE_EVENTS = {
+  CLOSE_WIDGET: 'BULK_ACTIONS_CLOSE_WIDGET',
+  MORE_OPTIONS: 'BULK_ACTIONS_MORE_OPTIONS',
+  SELECT_OPTION: 'BULK_ACTIONS_SELECT_OPTION',
+  ACTIONS: {
+    copyLinks: 'BULK_ACTIONS_CLIPBOARD_COPY',
+    delete: 'BULK_ACTIONS_DELETE',
+    unarchive: 'BULK_ACTIONS_UNARCHIVE',
+    archive: 'BULK_ACTIONS_ARCHIVE',
+  },
+  MORE_ACTIONS: {
+    priority: 'BULK_ACTIONS_CHANGE_PRIORITY',
+    status: 'BULK_ACTIONS_CHANGE_STATUS',
+    deadline: 'BULK_ACTIONS_ADD_DEADLINE',
+    collaborator: 'BULK_ACTIONS_ASSIGN_COLLABORATOR',
+    pm: 'BULK_ACTIONS_ASSIGN_PM',
+  },
+}
+
+export const INPUT_TYPES = {
+  CLICK: 'click',
+  KEYBOARD: 'keyboard',
+}
+
+export const I18N_SECTION = 'task'
